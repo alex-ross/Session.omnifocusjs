@@ -3,11 +3,15 @@
      * Returns the estimated duration in minutes for the task or 25 minutes if
      * task doesn't have any estimated minutes.
      *
+     * If the estimated duration for the task is more than 25 minutes it will
+     * still return 25 minutes. Session is like a Pomodoro timer. We should not
+     * start a Session for more than 25 minutes per session.
+     *
      * @param  {Task|Project} task The Omnifocus task
      * @return {number}    Number of minutes
      */
     function getSessionDuration(task) {
-        return task.estimatedMinutes || 25
+        return Math.min(task.estimatedMinutes || 25, 25)
     }
 
     /**
