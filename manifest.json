@@ -1,13 +1,13 @@
 {
   "author": "Alexander Ross",
-  "identifier": "se.aross.omnifocusplugins.session",
+  "identifier": "se.aross.omnifocusplugins.jira",
   "defaultLocale": "en",
   "version": "1.0.0",
-  "description": "Session.app companion for Omnifocus",
+  "description": "Jira companion for Omnifocus",
   "actions": [
     {
-      "image": "session-logo.png",
-      "identifier": "openInSession"
+      "image": "jira-logo.png",
+      "identifier": "openInJira"
     }
   ]
 }
